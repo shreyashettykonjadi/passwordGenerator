@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Generate a</h1>
+            <h1 class="green">random password</h1>
+            <p>Never use an insecure password again.</p>
+            <button>Generate passwords</button>
+
+            <div class="controls">
+                <label>
+                    Password Length: <span id="length-value">12</span>
+                    <input type="range" id="lengthSlide" min="8" max="32" value="12" />
+                </label>
+
+                <label>
+                    Symbols
+                    <input type="checkbox" name="symbol" id="symbol" checked>
+                </label>
+
+                <label>
+                    Numbers
+                    <input type="checkbox" name="numbers" id="numbers" checked>
+                </label>
+
+            </div>
+        </div>
+
+
+
+        <div class="output">
+            <div class="password" id="pw1"></div>
+            <div class="password" id="pw2"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
